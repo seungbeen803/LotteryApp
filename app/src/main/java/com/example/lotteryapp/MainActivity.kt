@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         val saveNumberBtn = findViewById<Button>(R.id.numsave)
         saveNumberBtn.setOnClickListener {
             // 문자열 가져옴
-            // 문자열을 리스트로
+            // 문자열을 리스트로 변환
             var lottoNums = pref.getString("lottonums", "")
             var numList = if(lottoNums == "") {
                 mutableListOf<String>()
